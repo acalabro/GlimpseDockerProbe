@@ -5,7 +5,7 @@ Information   | Value
 ------------- | --------
 Package       | it.cnr.isti.labsedc.glimpse
 Roadmap       | TBD
-Language      | Java
+Language      | Java 11 LTS
 
 # Summary
 A probe for sending events to the Glimpse monitoring platform.

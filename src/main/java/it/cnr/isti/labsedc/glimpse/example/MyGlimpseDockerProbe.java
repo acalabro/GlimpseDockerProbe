@@ -67,7 +67,7 @@ public class MyGlimpseDockerProbe extends GlimpseAbstractProbe {
 		MyGlimpseDockerProbe aGenericProbe = new MyGlimpseDockerProbe(
 				Manager.createProbeSettingsPropertiesObject("org.apache.activemq.jndi.ActiveMQInitialContextFactory",
 								//"ssl://146.48.77.37:61617","system", "manager","TopicCF", "jms.anotherCepTopic",false,"probeName", "anotherCepTopic",
-								"tcp://localhost:61616","system", "manager","TopicCF",
+								"tcp://glimpse-dev.isti.cnr.it:61616","system", "manager","TopicCF",
 								"jms.probeTopic", 
 								false, 
 								"probeName",

@@ -77,11 +77,18 @@ public class MyGlimpseDockerProbe extends GlimpseAbstractProbe {
 								"n1hehe", "n1hehe"));
 		
 		//sending events
-		try {
-				aGenericProbe.generateAndSendExample_GlimpseBaseEvents_SmartBuildingPayload();
-				aGenericProbe.generateAndSendExample_GlimpseBaseEvents_FaceRecognitionPayload();
-				aGenericProbe.generateAndSendExample_GlimpseBaseEvents_EventMachineInformationPayload();
-		} catch (IndexOutOfBoundsException e) {}		
+		while (true) {
+			try {
+//					aGenericProbe.generateAndSendExample_GlimpseBaseEvents_SmartBuildingPayload();
+//					aGenericProbe.generateAndSendExample_GlimpseBaseEvents_FaceRecognitionPayload();
+					aGenericProbe.generateAndSendExample_GlimpseBaseEvents_EventMachineInformationPayload();
+				} catch (IndexOutOfBoundsException e) {}		
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	private void generateAndSendExample_GlimpseBaseEvents_EventMachineInformationPayload() {
